@@ -15,4 +15,11 @@ public class SimpleController {
         model.addAttribute("appName", appName);
         return "home";
     }
+    
+    // Additional mapping for demonstration
+    @GetMapping("/can")
+    public String canPage(Model model) {
+        model.addAttribute("appName", appName);
+        return "can";
+    }
 }
